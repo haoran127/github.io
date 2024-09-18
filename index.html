@@ -189,7 +189,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-09-18 14:43:43 / 修改时间：14:44:15" itemprop="dateCreated datePublished" datetime="2024-09-18T14:43:43+08:00">2024-09-18</time>
+      <time title="创建时间：2024-09-18 14:43:43 / 修改时间：14:45:04" itemprop="dateCreated datePublished" datetime="2024-09-18T14:43:43+08:00">2024-09-18</time>
     </span>
 
   
@@ -208,7 +208,11 @@
 <p>1python -m textblob.download_corpora<br>注意：如果在下载语料库时遇到网络问题，可以尝试使用代理或手动下载并放置在正确的目录中。</p>
 <p>二、基本用法</p>
 <ol>
-<li>创建TextBlob对象<br>1from textblob import TextBlob<br>2<br>3text &#x3D; “TextBlob is a Python library for processing textual data.”<br>4blob &#x3D; TextBlob(text)</li>
+<li>创建TextBlob对象<!---more->
+1from textblob import TextBlob
+2
+3text = “TextBlob is a Python library for processing textual data.”
+4blob = TextBlob(text)</li>
 <li>分词和词性标注<br>1print(blob.words)  # 分词<br>2print(blob.tags)   # 词性标注</li>
 <li>名词短语提取<br>1print(blob.noun_phrases)</li>
 <li>情感分析<br>1sentiment &#x3D; blob.sentiment<br>2print(f“Polarity： {sentiment.polarity}， Subjectivity： {sentiment.subjectivity}”)</li>
